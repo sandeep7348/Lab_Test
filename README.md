@@ -7,11 +7,11 @@
   
 # Pull this repository and Fill in the blanks in Readme File alongwith:
 
-Name: 
-Roll No:
-SAPID: 
-Batch:
-Question Assigned: 
+Name: Sandeep Choudhary
+Roll No:143
+SAPID: 500064341
+Batch:B3
+Question Assigned: 3,4
 
 
 # How to code?
@@ -35,7 +35,63 @@ Question Assigned:
               MAX Allowable time with marks deduction is 1 Hour.
               
 All the Best!!
+Q1
+ package testlab;
 
+public class Testq1 {
+	
+  public boolean inorderEqual(int a,int b,int c, boolean equalok)
+  {  if(b>a && c>b) 
+    {
+	  return true;
+     }
+	  else if(equalok&& (a<=b && b<=c))
+	  {
+		    return true;
+	  }
+	  else if((a<=b && b<=c) &&!equalok) {
+		  return true;
+	  }
+		  else
+		    return false;
+		    
+    
+  
+	  }
+  public static void main(String[] args) {
+     boolean e;
+	  Testq1 a=new Testq1();
+       e=a.inorderEqual(5, 5, 7, false);
+       System.out.println(e);
+     
+}
+}
+Q2
+package testlab;
+
+public class Testq2 {
+
+	public boolean makeBricks(int small, int big, int goal)
+	{
+		int maxBig = goal/5;
+		if(maxBig <= big)
+			goal -= maxBig*5;
+		else
+			goal -= big*5;
+		if(goal <= small)
+			return true;
+		else
+		return false;
+	}
+	public static void main(String args[])
+	{
+		boolean d;
+		Testq2 b=new Testq2();
+		d=b.makeBricks(1, 5, 3);
+		System.out.println(d);
+	}
+
+}
 
 
 
